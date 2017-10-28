@@ -1,0 +1,14 @@
+body {
+	background-color: yellow;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+}
+
+#burger-type {
+	width: 350px;
+	height: 100px;
+}
+
