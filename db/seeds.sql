@@ -1,3 +1,3 @@
 INSERT INTO burgers (burger_name) VALUES ('Narwhal Burger');
-INSERT INTO burgers (burger_name) VALUES ('Unicorn Burger');
-INSERT INTO burgers (burger_name) VALUES ('Dragon Burger');
+INSERT INTO burgers (burger_name, devoured) VALUES ('Unicorn Burger', '0');
+INSERT INTO burgers (burger_name, devoured) VALUES ('Dragon Burger', '1');

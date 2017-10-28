@@ -3,24 +3,26 @@
 	<img src="assets/img/burger.png">
 	<div class="burger-container">
 		<div id="devour-container">
-			<ul>
+			<p>To Devour</p>
+			<ol>
 				{{#each burgers}}
 					{{#unless devoured}}
-						{{burger_name}}
-						<button>Devour</button>
+						<li>{{burger_name}}
+						<button class="devour" data-id="{{id}}">Devour</button></li>
 					{{/unless}}
 				{{/each}}
-			</ul>
+			</ol>
 		</div>
-		<div id="eaten-container">
-			<ul>
+		<div id="eaten-container">			
+			<p>Devoured</p>
+			<ol>
 				{{#each burgers}}
 					{{#if devoured}}
-						{{burger_name}}
+						<li>{{burger_name}}</li>
 						<button>Delete</button>
 					{{/if}}
 				{{/each}}
-			</ul>
+			</ol>
 		</div>
 
 	</div>
