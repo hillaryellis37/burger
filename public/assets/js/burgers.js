@@ -1,17 +1,14 @@
 $(function() {
 
-	$(".create-form").on("submit", function(event) {
-		event.preventDefault();
+	  $(".create-form").on("submit", function(event) {
+    // Make sure to preventDefault on a submit event.
+    event.preventDefault();
+    burgerName = $("#burger-type").val().trim();
+    console.log(burgerName);
+    var newBurger = {
+      burger_name: $("#burger-type").val().trim()
 
-		alert("clicked");
-		console.log("clicked");
-
-	var newBurger = {
-		burger_name: $("#burger-type").val().trim(),
-
-	};
-
-    console.log(newBurger);
+    };
 
     // Send the POST request.
     $.ajax("/api/burgers", {
@@ -24,6 +21,6 @@ $(function() {
         location.reload();
       }
     );
-	});
+  });
 
 });
